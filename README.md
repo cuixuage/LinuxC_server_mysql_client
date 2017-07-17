@@ -6,7 +6,7 @@ server-> make;./server  ../conf/serverconf.ini      client-> make; ./client  127
 **server端**   
 进程池响应client 登录、注册、下载、上传、断点下载、日志记录功能   
 **client端**  
-将对应命令的数据包进行发送
+将对应命令的数据包进行发送,包括退出处理机制
   
 #**登录、注册**   
 注册: client salt盐值随机生成$6$.......格式,crypt SHA-512加密,即可得到密文密码,tcp发送给server保存到mysql中    
