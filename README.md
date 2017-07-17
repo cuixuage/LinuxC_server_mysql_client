@@ -11,7 +11,8 @@ server-> make;./server  ../conf/serverconf.ini      client-> make; ./client  127
 #**登录、注册**   
 注册: client salt盐值随机生成$6$.......格式,crypt SHA-512加密,即可得到密文密码,tcp发送给server保存到mysql中    
 登录: server 先发送已保存的salt给client,client将加密后的密文密码发送给server,server与mysql数据进行比对    
-server、client建立连接后,处于while 1,只有login成功后break;**   
+server、client建立连接后,处于while 1,只有login成功后break;   
+login_password.sql 文件创建login_password数据库以及对应的表结构    
 
 #**下载、上传**  
 mmap映射文件,得到映射区指针,memcpy到数据包中不断发送      
