@@ -1,9 +1,10 @@
-# 使用概述   
-**启动**  
+# 使用概述 
+   
+#**启动**  
 server-> make;./server  ../conf/serverconf.ini      client-> make; ./client  127.0.0.1  2000     
 默认 server ip为主机ip,port=2000,子进程个数=5    
 
-**server端**   
+#**server端**   
 进程池响应client 登录、注册、下载、上传、断点下载、日志记录功能   
 **client端**  
 将对应命令的数据包进行发送,包括退出处理机制
