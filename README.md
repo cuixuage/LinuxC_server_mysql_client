@@ -6,7 +6,7 @@ server-> make;./server  ../conf/serverconf.ini      client-> make; ./client  127
 
 #**server端**   
 进程池响应client 登录、注册、下载、上传、断点下载、日志记录功能   
-**client端**  
+#**client端**  
 将对应命令的数据包进行发送,包括退出处理机制
   
 #**登录、注册**   
