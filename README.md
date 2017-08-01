@@ -33,4 +33,8 @@ mmap映射文件,得到映射区指针,memcpy到数据包中不断发送
 
 #**日志记录**   
 登录用户、登录时间、命令操作的信息记录保存到本地文件       
-server func.h 记录日志的绝度路径#define LogFile "/home/cuixuange/20170714/server/server.log" 防止cd 命令后改变了工作路径所以采用了绝对路径
+server func.h 记录日志的绝度路径#define LogFile "/home/cuixuange/20170714/server/server.log" 防止cd 命令后改变了工作路径所以采用了绝对路径  
+
+#**代码行数**   
+find ./ -name "*.c"|xargs wc -l   1700行左右
+find /home/cuixuange/Linux_C_vacation -name *.c -or -name *.h -or -name *.cpp | xargs cat | grep -v ^$ | wc -l 
